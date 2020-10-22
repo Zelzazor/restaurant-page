@@ -19,7 +19,11 @@ h1{
 }
 
 header{
+    display: flex;
     padding: 3rem;
+    background-color: beige;
+    width: 100%;
+    justify-content: center;
 }
 
 nav{ 
@@ -52,15 +56,25 @@ min-height: 100vh;
 .row {
     display: flex;
     width: 100%;
+    margin: 1rem 0rem;
     justify-content: center;
 }
 
-#img1 {
+.imgs {
     width: 40%;
     height: auto;
     border: solid 0.5rem rgb(94, 211, 88);
     border-radius: 1rem;
-    justify-self: center;
+}
+
+footer{
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 20vh;
+    background-color:  rgb(94, 211, 88);
+    width: 100%;
 }
 
 
@@ -74,7 +88,7 @@ min-height: 100vh;
     p{
         text-align: center;
     }
-    #img1{
+    .imgs{
         width: 90%;
     }
 
@@ -93,9 +107,6 @@ min-height: 100vh;
 }
 
 @media (max-width: 500px){
-    .img-flex > p {
-        font-size: 1rem;
-    }
     nav{
         flex-direction: column;
     }
