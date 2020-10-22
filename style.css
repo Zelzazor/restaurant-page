@@ -40,3 +40,69 @@ nav{
 .navBtns:hover{
     background-color:  rgb(133, 236, 128);
 }
+
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 1.5rem;
+min-height: 100vh;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#img1 {
+    width: 40%;
+    height: auto;
+    border: solid 0.5rem rgb(94, 211, 88);
+    border-radius: 1rem;
+    justify-self: center;
+}
+
+
+.img-flex > p {
+    padding: 0rem 1rem;
+    margin: 0;
+    text-align: justify;
+}
+
+@media (max-width: 725px){
+    p{
+        text-align: center;
+    }
+    #img1{
+        width: 90%;
+    }
+
+    .img-flex{
+        flex-wrap: wrap;
+    }
+
+    .img-flex > p {
+        padding: 1rem;
+        margin: 0;
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+
+   
+}
+
+@media (max-width: 500px){
+    .img-flex > p {
+        font-size: 1rem;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 421px){
+    h1{
+        font-size: 2rem;
+    }
+}
