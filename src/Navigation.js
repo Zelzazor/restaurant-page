@@ -9,6 +9,9 @@ const Navigation = () => {
     btnHome.classList.add("navBtns");
     btnMenu.classList.add("navBtns");
     btnContact.classList.add("navBtns");
+    btnHome.id = "btnHome";
+    btnMenu.id = "btnMenu";
+    btnContact.id = "btnContact";
     Nav.appendChild(btnHome);
     Nav.appendChild(btnMenu);
     Nav.appendChild(btnContact);
