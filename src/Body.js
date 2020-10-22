@@ -6,6 +6,7 @@ const Body = () => {
     let body = document.createElement("div");
     let nav = Navigation();
     let home = BodyHome();
+    body.classList.add("body");
     body.appendChild(nav);
     body.appendChild(home);
 
